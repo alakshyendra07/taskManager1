@@ -29,11 +29,11 @@ public class Task {
         return id;
     }
 
-    public void getDetail() {
-        System.out.println("Task{" +
+    public String getDetail() {
+        return  "Task{" +
                 "id=" + id +
                 ", description='" + description + '\'' +
                 ", status=" + status +
-                '}');
+                "} \n" ;
     }
 }

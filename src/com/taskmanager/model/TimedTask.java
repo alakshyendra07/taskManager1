@@ -1,7 +1,5 @@
 package com.taskmanager.model;
 
-import com.taskmanager.enums.TaskStatus;
-
 public class TimedTask extends Task  {
 
     int durationInMinutes;
@@ -12,13 +10,13 @@ public class TimedTask extends Task  {
     }
 
     @Override
-    public void getDetail() {
-        System.out.println("TimedTask{" +
+    public String getDetail() {
+        return "TimedTask{" +
                 "description='" + description + '\'' +
                 ", id=" + id +
                 ", status=" + status +
                 ", durationInMinutes=" + durationInMinutes +
-                '}');
+                "} \n" ;
     }
 
 }

@@ -1,7 +1,5 @@
 package com.taskmanager.model;
 
-import com.taskmanager.enums.TaskStatus;
-
 public class RecurringTask extends Task{
     int repeatInterval;
     int durationInMinutes;
@@ -13,13 +11,13 @@ public class RecurringTask extends Task{
     }
 
     @Override
-    public void getDetail() {
-        System.out.println( "RecurringTask{" +
+    public String getDetail() {
+        return  "RecurringTask{" +
                 "repeatInterval=" + repeatInterval +
                 ", durationInMinutes=" + durationInMinutes +
                 ", id=" + id +
                 ", description='" + description + '\'' +
                 ", status=" + status +
-                '}');
+                "} \n" ;
     }
 }

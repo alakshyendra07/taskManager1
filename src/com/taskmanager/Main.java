@@ -48,7 +48,7 @@ public class Main {
                         throw new TaskNotFoundException("Something went Wrong");
                 }
             } catch (TaskNotFoundException e) {
-                System.out.println("Enter within range!");
+                System.out.println(e.getMessage());
                 ;
             }
         }
